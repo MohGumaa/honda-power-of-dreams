@@ -1,8 +1,16 @@
+import Home from './pages/Home/Home';
+import Header from './components/common/Header/Header';
+import Footer from './components/common/Footer/Footer';
+
 const App = () => {
 	return (
-		<h1 className="text-3xl font-bold underline">
-			Buy New &amp; Used Honda Cars - Sedans and SUVs | Honda
-		</h1>
+		<>
+			<Header />
+			<main className="min-h-screen">
+				<Home />
+			</main>
+			<Footer />
+		</>
 	);
 };
 
