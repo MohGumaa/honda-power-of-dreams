@@ -87,12 +87,15 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(239, 68, 68, 0.8);
-	border-radius: 4px;
+	/* background: rgba(239, 68, 68, 0.8);
+	border-radius: 4px; */
+
+	@apply bg-gray-200 rounded;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(239, 68, 68, 1);
+	/* background: rgba(239, 68, 68, 1); */
+	@apply bg-gray-100;
 }
 
 .animate-fadeInUp {
