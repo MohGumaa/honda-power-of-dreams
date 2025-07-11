@@ -3,8 +3,16 @@ export type LogoProps = {
   spanClassName?:string;
 }
 
-export type NavLink = {
+export type NavLinkProps = {
   id: number;
 	text: string;
 	href: string;
+}
+
+export type ButtonProps = {
+  type: "button" | "submit" | "reset";
+  disabled?: boolean;
+  className:string;
+  children: React.ReactNode
+  onClick?: () => void
 }

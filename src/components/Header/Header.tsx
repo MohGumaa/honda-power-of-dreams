@@ -1,5 +1,7 @@
-import { NavLinks } from "../../constants"
+import { Eye } from "lucide-react"
 import Logo from "../ui/Logo/Logo"
+import Button from "../ui/Button/Button"
+import { NavLinks } from "../../constants"
 
 const Header = () => {
   return (
@@ -11,6 +13,10 @@ const Header = () => {
             <a key={link.id} href={link.href} className="capitalize hover:text-red-400 transition-colors">{link.text}</a>
           ))}</ul>
         </nav>
+        <Button type="button" onClick={()=> alert('This will not trigger')} className="bg-red-500 border-red-500 ring-offset-background hover:bg-red-600 hover:border-red-600 focus-visible:ring-ring focus-visible:ring-offset-2 text-white">
+          <Eye size={20} />
+          <span>build & price</span>
+        </Button>
       </div>
     </header>
   )

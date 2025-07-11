@@ -1,6 +1,6 @@
-import type { NavLink } from '../types';
+import type { NavLinkProps } from '../types';
 
-export const NavLinks: NavLink[] = [
+export const NavLinks: NavLinkProps[] = [
 	{ id: 0, text: 'models', href: '#' },
 	{ id: 1, text: 'features', href: '#' },
 	{ id: 2, text: 'technology', href: '#' },
