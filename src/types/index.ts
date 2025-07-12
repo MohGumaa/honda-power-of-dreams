@@ -16,3 +16,12 @@ export type ButtonProps = {
   children: React.ReactNode
   onClick?: () => void
 }
+
+export type MEDIAITEMSPROPS = {
+  id:number;
+  type: string;
+  src: string;
+  title: string;
+  subtitle: string;
+  description: string;
+}[]
